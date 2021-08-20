@@ -1,0 +1,101 @@
+apiVersion: v1
+entries:
+  erda:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2021-08-20T15:44:39.883145+08:00"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: ""
+      tags:
+      - master
+      version: ~3.11.10
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: ""
+      tags:
+      - master
+      version: ~6.2.4
+    - condition: etcd.enabled
+      name: etcd
+      repository: ""
+      tags:
+      - master
+      version: ~3.3.15-0
+    - condition: kafka.enabled
+      name: kafka
+      repository: ""
+      tags:
+      - master
+      version: ~1.1.0-20210323-be01a9b
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      tags:
+      - master
+      version: ~5.7.34
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: ""
+      tags:
+      - master
+      version: ~3.4.13-monitor
+    - condition: kms.enabled
+      name: kms
+      repository: ""
+      tags:
+      - master
+      version: ~1.0.0-20200608-f11445f
+    - condition: registry.enabled
+      name: registry
+      repository: ""
+      tags:
+      - master
+      - work
+      version: ~2.7.1
+    - condition: sonar.enabled
+      name: sonar
+      repository: ""
+      tags:
+      - master
+      version: ~8.4.2
+    - condition: volume-provisioner.enabled
+      name: volume-provisioner
+      repository: ""
+      tags:
+      - master
+      - work
+      version: ~1.0.0-20210416-1a3758f
+    - condition: redis.enabled
+      name: redis
+      repository: ""
+      tags:
+      - master
+      version: ~2.7.1
+    description: An open-source platform bases on Kubernetes that can deploy microservice
+      applications.
+    digest: d3bf82ce1d15ee581192cf666db3dcbcf91639b35189f541be2080d265c80114
+    home: https://www.erda.cloud/
+    icon: https://github.com/erda-project/erda/raw/develop/docs/files/logo.jpg
+    keywords:
+    - Kubernetes
+    - microservice
+    - open-source
+    maintainers:
+    - email: luobily@gmail.com
+      name: Luobingli
+    - email: zhuzhenwang1984@gmail.com
+      name: Wangzhuzhen
+    - email: root@viper.run
+      name: Liutianxiang
+    name: erda
+    sources:
+    - https://github.com/erda-project/erda
+    - https://github.com/erda-project/erda-infra
+    - https://github.com/erda-project/erda-ui
+    type: application
+    urls:
+    - https://wangzhuzhen.github.io/helm-chart/erda-1.1.0.tgz
+    version: 1.1.0
+generated: "2021-08-20T15:44:39.877251+08:00"
